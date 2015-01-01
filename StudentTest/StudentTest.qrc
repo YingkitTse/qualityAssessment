@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/new/icons">
+        <file>images/7.png</file>
+    </qresource>
+    <qresource prefix="/new/pics">
+        <file>images/sgu.png</file>
+        <file>images/splash.png</file>
+    </qresource>
+</RCC>
