@@ -140,6 +140,9 @@
    <property name="text">
     <string>提交</string>
    </property>
+   <property name="shortcut">
+    <string>Return</string>
+   </property>
   </widget>
   <widget class="QPushButton" name="AbortBtn">
    <property name="geometry">
@@ -152,6 +155,9 @@
    </property>
    <property name="text">
     <string>取消</string>
+   </property>
+   <property name="shortcut">
+    <string>Esc</string>
    </property>
   </widget>
   <widget class="QLabel" name="rpErrTip">
@@ -188,6 +194,15 @@
    </property>
   </widget>
  </widget>
+ <tabstops>
+  <tabstop>idLineEdit</tabstop>
+  <tabstop>nameText</tabstop>
+  <tabstop>oldPwText</tabstop>
+  <tabstop>newPwLineEdit</tabstop>
+  <tabstop>rpNewPwLineEdit</tabstop>
+  <tabstop>SubmitBtn</tabstop>
+  <tabstop>AbortBtn</tabstop>
+ </tabstops>
  <resources/>
  <connections/>
 </ui>

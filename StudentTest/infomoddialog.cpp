@@ -21,7 +21,6 @@ infoModDialog::infoModDialog(QWidget *parent) :
     mapper->addMapping(ui->ageLineEdit,3);
     mapper->addMapping(ui->telLineEdit,6);
     mapper->addMapping(ui->addTextEdit,7);
-
 }
 
 infoModDialog::~infoModDialog()
@@ -31,14 +30,10 @@ infoModDialog::~infoModDialog()
 
 void infoModDialog::on_queryBtn_clicked()
 {
-    if(ui->idLineEdit->text().operator !=(QString("-1"))){
-        for(int row = 0; row < tablemodel->rowCount(); ++row){
-            QSqlRecord record = tablemodel->record(row);
-            if(record.value(0).toString().trimmed().operator ==(ui->idLineEdit->text().trimmed())){
-                mapper->setCurrentIndex(row);
-                break;
-            }
-        }
+    if(ui->idLineEdit->text().operator !=(QString("-1")) ){
+        tablemodel->setFilter(QString("id='%1'").arg(ui->idLineEdit->text()));
+        tablemodel->select();
+        mapper->setCurrentIndex(0);
     }
     else{
         mapper->toFirst();

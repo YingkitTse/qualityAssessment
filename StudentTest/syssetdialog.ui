@@ -103,6 +103,9 @@
    <property name="text">
     <string>关闭</string>
    </property>
+   <property name="shortcut">
+    <string>Esc</string>
+   </property>
   </widget>
   <widget class="QLabel" name="label">
    <property name="geometry">
@@ -139,6 +142,9 @@
    <property name="text">
     <string>查询</string>
    </property>
+   <property name="shortcut">
+    <string>Return</string>
+   </property>
   </widget>
   <widget class="QPushButton" name="upSortBtn">
    <property name="geometry">
@@ -167,6 +173,19 @@
    </property>
   </widget>
  </widget>
+ <tabstops>
+  <tabstop>tableView</tabstop>
+  <tabstop>refreshBtn</tabstop>
+  <tabstop>addBtn</tabstop>
+  <tabstop>delBtn</tabstop>
+  <tabstop>revertBtn</tabstop>
+  <tabstop>submitBtn</tabstop>
+  <tabstop>idLineEdit</tabstop>
+  <tabstop>queryBtn</tabstop>
+  <tabstop>upSortBtn</tabstop>
+  <tabstop>downSortBtn</tabstop>
+  <tabstop>closeBtn</tabstop>
+ </tabstops>
  <resources/>
  <connections/>
 </ui>

@@ -158,6 +158,9 @@
    <property name="text">
     <string>查询</string>
    </property>
+   <property name="shortcut">
+    <string>Return</string>
+   </property>
   </widget>
   <widget class="QPushButton" name="submitBtn">
    <property name="geometry">
@@ -183,6 +186,9 @@
    </property>
    <property name="text">
     <string>关闭</string>
+   </property>
+   <property name="shortcut">
+    <string>Esc</string>
    </property>
   </widget>
   <widget class="QLineEdit" name="sexLineEdit">
@@ -212,6 +218,17 @@
    </property>
   </widget>
  </widget>
+ <tabstops>
+  <tabstop>queryBtn</tabstop>
+  <tabstop>idLineEdit</tabstop>
+  <tabstop>nameText</tabstop>
+  <tabstop>sexLineEdit</tabstop>
+  <tabstop>ageLineEdit</tabstop>
+  <tabstop>telLineEdit</tabstop>
+  <tabstop>addTextEdit</tabstop>
+  <tabstop>submitBtn</tabstop>
+  <tabstop>closeBtn</tabstop>
+ </tabstops>
  <resources/>
  <connections/>
 </ui>

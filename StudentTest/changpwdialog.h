@@ -14,7 +14,7 @@ class changPwDialog : public QDialog
 public:
     explicit changPwDialog(QWidget *parent = 0);
     ~changPwDialog();
-private slots:
+private slots:                  //槽动作
     void queryname();
     void changepw();
     void on_AbortBtn_clicked();

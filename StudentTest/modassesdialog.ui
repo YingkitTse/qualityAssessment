@@ -47,6 +47,9 @@
    <property name="text">
     <string>关闭</string>
    </property>
+   <property name="shortcut">
+    <string>Esc</string>
+   </property>
   </widget>
   <widget class="QLineEdit" name="idLineEdit">
    <property name="geometry">
@@ -108,6 +111,9 @@
    </property>
    <property name="text">
     <string>查询</string>
+   </property>
+   <property name="shortcut">
+    <string>Return</string>
    </property>
   </widget>
   <widget class="QPushButton" name="submitBtn">
@@ -176,6 +182,18 @@
    </property>
   </widget>
  </widget>
+ <tabstops>
+  <tabstop>idLineEdit</tabstop>
+  <tabstop>nameText</tabstop>
+  <tabstop>queryBtn</tabstop>
+  <tabstop>addBtn</tabstop>
+  <tabstop>delBtn</tabstop>
+  <tabstop>revertBtn</tabstop>
+  <tabstop>submitBtn</tabstop>
+  <tabstop>queryAllBtn</tabstop>
+  <tabstop>tableView</tabstop>
+  <tabstop>closeBtn</tabstop>
+ </tabstops>
  <resources/>
  <connections/>
 </ui>

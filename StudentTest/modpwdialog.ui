@@ -191,6 +191,9 @@
    <property name="text">
     <string>提交</string>
    </property>
+   <property name="shortcut">
+    <string>Return</string>
+   </property>
   </widget>
   <widget class="QPushButton" name="cancelBtn">
    <property name="geometry">
@@ -204,8 +207,18 @@
    <property name="text">
     <string>取消</string>
    </property>
+   <property name="shortcut">
+    <string>Esc</string>
+   </property>
   </widget>
  </widget>
+ <tabstops>
+  <tabstop>oldPwLineEdit</tabstop>
+  <tabstop>newPwLineEdit</tabstop>
+  <tabstop>rpPwLineEdit</tabstop>
+  <tabstop>OkBtn</tabstop>
+  <tabstop>cancelBtn</tabstop>
+ </tabstops>
  <resources/>
  <connections/>
 </ui>

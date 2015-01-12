@@ -18,8 +18,9 @@ void queryAssessDialog::Authorize(QString id, QString name){
     xid = id;
     ui->nameLabel->setText(xname);
     ui->idLabel->setText(xid);
-    QSqlTableModel *model = new QSqlTableModel(this);
+    QSqlRelationalTableModel *model = new QSqlRelationalTableModel(this);
     model->setTable("testInfo");
+    model->setRelation(2,QSqlRelation("cata","no","name"));
     model->setHeaderData(0,Qt::Horizontal,QString::fromUtf8("学号"));
     model->setHeaderData(1,Qt::Horizontal,QString::fromUtf8("项目"));
     model->setHeaderData(2,Qt::Horizontal,QString::fromUtf8("类别"));

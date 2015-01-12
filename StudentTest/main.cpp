@@ -13,25 +13,21 @@ int main(int argc, char *argv[]){
     QSplashScreen *splash = new QSplashScreen;
     splash->setPixmap(QPixmap(":/new/pics/images/splash.png"));
     splash->show();
-
     Qt::Alignment bottomRight = Qt::AlignRight | Qt::AlignBottom;
     splash->showMessage(QString::fromUtf8("Establishing connections..."),bottomRight,Qt::red);
-    cp.sleep(1);
     dbase db;
     if(!db.OpenDatabase()){
         QMessageBox::critical(0,QString::fromUtf8("致命错误"),QString::fromUtf8("无法与数据库服务器建立连接！\n请检查网络连接并重试！\n程序现将关闭！"));
         return 1;
     }
-
+    cp.sleep(1);
     splash->showMessage(QString::fromUtf8("Loading modules..."),bottomRight,Qt::blue);
     LoginDialog w;
     cp.sleep(1);
-    splash->showMessage(QString::fromUtf8("Setting up windows..."),bottomRight,Qt::yellow);
-    cp.sleep(1);
     splash->showMessage(QString::fromUtf8("Initializing Login Dialog..."),bottomRight,Qt::black);
+    cp.sleep(1);
     w.show();
     splash->finish(&w);
     delete splash;
-
     return a.exec();
 }

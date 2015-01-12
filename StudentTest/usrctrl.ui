@@ -284,18 +284,33 @@ font: 75 22pt &quot;华文行楷&quot;;</string>
    <property name="text">
     <string>&amp;Log out</string>
    </property>
+   <property name="shortcut">
+    <string>Alt+S</string>
+   </property>
   </action>
   <action name="action_Exit">
    <property name="text">
     <string>&amp;Exit</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+E</string>
    </property>
   </action>
   <action name="action_About">
    <property name="text">
     <string>&amp;About</string>
    </property>
+   <property name="shortcut">
+    <string>Alt+A</string>
+   </property>
   </action>
  </widget>
+ <tabstops>
+  <tabstop>testBtn</tabstop>
+  <tabstop>infoBtn</tabstop>
+  <tabstop>modpwBtn</tabstop>
+  <tabstop>exitBtn</tabstop>
+ </tabstops>
  <resources>
   <include location="StudentTest.qrc"/>
  </resources>

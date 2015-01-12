@@ -15,7 +15,7 @@ public:
     void Authorize(QString id, QString name, QString auth);
     ~adminCtrl();
 
-private slots:
+private slots:                  //槽动作
     void on_exitBtn_clicked();
     void on_modpw_clicked();
     void on_testBtn_clicked();

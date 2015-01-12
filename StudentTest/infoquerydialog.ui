@@ -100,6 +100,12 @@
      <height>71</height>
     </rect>
    </property>
+   <property name="cursor" stdset="0">
+    <cursorShape>ForbiddenCursor</cursorShape>
+   </property>
+   <property name="acceptDrops">
+    <bool>false</bool>
+   </property>
   </widget>
   <widget class="QLabel" name="label_7">
    <property name="geometry">
@@ -123,6 +129,18 @@
      <height>20</height>
     </rect>
    </property>
+   <property name="cursor">
+    <cursorShape>ForbiddenCursor</cursorShape>
+   </property>
+   <property name="contextMenuPolicy">
+    <enum>Qt::DefaultContextMenu</enum>
+   </property>
+   <property name="acceptDrops">
+    <bool>false</bool>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
   </widget>
   <widget class="QLineEdit" name="idText">
    <property name="geometry">
@@ -132,6 +150,15 @@
      <width>251</width>
      <height>20</height>
     </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>ForbiddenCursor</cursorShape>
+   </property>
+   <property name="acceptDrops">
+    <bool>false</bool>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
    </property>
   </widget>
   <widget class="QLineEdit" name="nameText">
@@ -143,6 +170,15 @@
      <height>20</height>
     </rect>
    </property>
+   <property name="cursor">
+    <cursorShape>ForbiddenCursor</cursorShape>
+   </property>
+   <property name="acceptDrops">
+    <bool>false</bool>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
   </widget>
   <widget class="QLineEdit" name="sexText">
    <property name="geometry">
@@ -152,6 +188,15 @@
      <width>251</width>
      <height>20</height>
     </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>ForbiddenCursor</cursorShape>
+   </property>
+   <property name="acceptDrops">
+    <bool>false</bool>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
    </property>
   </widget>
   <widget class="QLineEdit" name="ageText">
@@ -163,6 +208,15 @@
      <height>20</height>
     </rect>
    </property>
+   <property name="cursor">
+    <cursorShape>ForbiddenCursor</cursorShape>
+   </property>
+   <property name="acceptDrops">
+    <bool>false</bool>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
   </widget>
   <widget class="QLineEdit" name="telText">
    <property name="geometry">
@@ -172,6 +226,15 @@
      <width>251</width>
      <height>20</height>
     </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>ForbiddenCursor</cursorShape>
+   </property>
+   <property name="acceptDrops">
+    <bool>false</bool>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
    </property>
   </widget>
   <widget class="QPushButton" name="pushButton">
@@ -186,8 +249,21 @@
    <property name="text">
     <string>关闭</string>
    </property>
+   <property name="shortcut">
+    <string>Return, Esc</string>
+   </property>
   </widget>
  </widget>
+ <tabstops>
+  <tabstop>authText</tabstop>
+  <tabstop>idText</tabstop>
+  <tabstop>nameText</tabstop>
+  <tabstop>sexText</tabstop>
+  <tabstop>ageText</tabstop>
+  <tabstop>telText</tabstop>
+  <tabstop>addText</tabstop>
+  <tabstop>pushButton</tabstop>
+ </tabstops>
  <resources/>
  <connections/>
 </ui>

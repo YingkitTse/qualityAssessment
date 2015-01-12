@@ -11,10 +11,7 @@ sysSetDialog::sysSetDialog(QWidget *parent) :
     ui->setupUi(this);
     model = new QSqlRelationalTableModel(this);
     model->setEditStrategy(QSqlTableModel::OnManualSubmit);
-    model->setTable("userInfo");
-    model->setRelation(5,QSqlRelation("auth","no","name"));
     this->initTable();
-    model->select();
     ui->tableView->setModel(model);
     ui->tableView->setItemDelegate(new QSqlRelationalDelegate(ui->tableView));
 }
@@ -30,6 +27,8 @@ void sysSetDialog::on_closeBtn_clicked()
 }
 
 void sysSetDialog::initTable(){
+    model->setTable("userInfo");
+    model->setRelation(5,QSqlRelation("auth","no","name"));
     model->setHeaderData(0,Qt::Horizontal,QString::fromUtf8("学/工号"));
     model->setHeaderData(1,Qt::Horizontal,QString::fromUtf8("姓名"));
     model->setHeaderData(2,Qt::Horizontal,QString::fromUtf8("性别"));
@@ -38,6 +37,7 @@ void sysSetDialog::initTable(){
     model->setHeaderData(5,Qt::Horizontal,QString::fromUtf8("操作权限"));
     model->setHeaderData(6,Qt::Horizontal,QString::fromUtf8("电话"));
     model->setHeaderData(7,Qt::Horizontal,QString::fromUtf8("住址"));
+    model->select();
 }
 
 void sysSetDialog::on_refreshBtn_clicked()
